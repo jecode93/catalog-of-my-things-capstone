@@ -2,7 +2,7 @@ class Item
   attr_acesssor :archived, :publish_date, :genre, :author, :source, :label
 
   def initialize(archived, publish_date)
-    @id = generate_unique_id
+    @id = generate_id
     @archived = archived
     @publish_date = publish_date
     @genre = nil
@@ -11,7 +11,7 @@ class Item
     @label = nil
   end
 
-  def generate_unique_id
+  def generate_id
     timestamp = Time.now.to_i * 1000
     random_number = rand(101_000)
     "#{timestamp}#{random_number}"
