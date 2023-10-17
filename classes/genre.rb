@@ -1,7 +1,8 @@
 require_relative 'item'
 
 class Genre
-  attr_accessor :id, :name, :items
+  attr_reader :id, :items
+  attr_accessor :name
 
   def initialize(name, _id)
     @id = generate_id
