@@ -1,3 +1,5 @@
+require_relative 'item'
+
 class Genre
   attr_accessor :id, :name, :items
 
