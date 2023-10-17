@@ -5,10 +5,10 @@ class Item
     @id = generate_unique_id
     @archived = archived
     @publish_date = publish_date
-    @genre = genre
-    @author = author
-    @source = source
-    @label = label
+    @genre = nil
+    @author = nil
+    @source = nil
+    @label = nil
   end
 
   def generate_unique_id
