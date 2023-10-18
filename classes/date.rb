@@ -1,5 +1,5 @@
 class Date
   def year
-    self.strftime('%Y')
+    strftime('%Y')
   end
 end
