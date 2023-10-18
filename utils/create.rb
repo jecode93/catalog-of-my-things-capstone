@@ -25,7 +25,7 @@ module Create
     print 'Enter Album Title: '
     name = gets.chomp.to_s
 
-    print 'Enter date of release (YYYY-M-D): '
+    print 'Enter date of release (YYYY-MM-DD): '
     publish_date = gets.chomp
 
     print 'Album listed on Spotify? (Y/N): '
@@ -43,7 +43,7 @@ module Create
     print 'Enter the genre of the album music: '
     genre = gets.chomp
 
-    @music << MusicAlbum.new(publish_date, on_spotify, genre)
+    @music << MusicAlbum.new(name, on_spotify, genre, publish_date)
     write_to_file(@music, './data/music_albums.json')
     puts "Music Album '#{name}' created successfully'"
   end
