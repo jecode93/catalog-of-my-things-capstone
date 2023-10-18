@@ -1,22 +1,22 @@
 require_relative '../classes/author'
+require_relative '../classes/item'
 require 'rspec'
-describe '#can_be_archived?' do
-  let(:title) { 'Some Game' }
-  let(:published_date) { Date.new(2019, 1, 1) }
-  let(:last_played_at) { Time.new(2022, 1, 1) }
-  let(:game) { Game.new(title, published_date, last_played_at) }
+require 'date'
 
-  context 'when the game can be archived' do
-    it 'returns true' do
-      allow(Time).to receive(:now).and_return(Time.new(2024, 1, 1))
-      expect(game.can_be_archived?).to be true
-    end
+describe '#add_item' do
+  let(:author) { Author.new('John', ' Doe') }
+  let(:item) { Item.new('Book', Date.today) }
+
+  it 'adds the item to the author\'s items collection' do
+    expect {
+      author.add_item(item)
+    }.to change {
+      author.items.size
+    }.by(1)
   end
 
-  context 'when the game cannot be archived' do
-    it 'returns false' do
-      allow(Time).to receive(:now).and_return(Time.new(2023, 1, 1))
-      expect(game.can_be_archived?).to be false
-    end
+  it 'sets the author of the item to the current author object' do
+    author.add_item(item)
+    expect(item.author).to eq(author)
   end
 end
