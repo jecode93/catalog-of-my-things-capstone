@@ -20,7 +20,7 @@ module Create
     puts "Book '#{publisher}' created successfully'"
   end
 
-  def create_music
+  def create_music_album
     print 'Enter Album Title: '
     name = gets.chomp.to_s
 
