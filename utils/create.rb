@@ -1,5 +1,6 @@
 require_relative '../classes/book'
 require_relative '../classes/music_album'
+require_relative '../classes/genre'
 require_relative '../classes/item'
 require_relative '../utils/preserve_data'
 
@@ -32,7 +33,7 @@ module Create
     print 'Enter the genre of the album music: '
     genres = gets.chomp
 
-    @music << MusicAlbum.new(name, publish_date, on_spotify, genres)
+    @music << MusicAlbum.new(name, publish_date, on_spotify)
     write_to_file(@music, './data/music_albums.json')
     puts "Music Album '#{name}' created successfully'"
   end
