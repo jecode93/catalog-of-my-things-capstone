@@ -8,9 +8,9 @@ describe '#add_item' do
   let(:item) { Item.new('Book', Date.today) }
 
   it 'adds the item to the author\'s items collection' do
-    expect {
+    expect do
       author.add_item(item)
-    }.to change {
+    end.to change {
       author.items.size
     }.by(1)
   end

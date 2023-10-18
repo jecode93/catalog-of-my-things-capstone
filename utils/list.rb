@@ -33,7 +33,8 @@ module List
     @games = read_from_file('./data/game.json')
     puts 'Game list is empty' if @games.empty?
     @games.each_with_index do |game, i|
-      puts "#{i}) Multiplayer: #{game['multiplayer']}, Last played at: #{game['last_played_at']}, Publish date: #{game['publish_date']}"
+      puts "#{i}) Multiplayer: #{game['multiplayer']}, Last played at:
+      #{game['last_played_at']}, Publish date: #{game['publish_date']}"
     end
   end
 end
