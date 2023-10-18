@@ -46,9 +46,11 @@ module Create
     @music << MusicAlbum.new(publish_date, on_spotify, genre)
     write_to_file(@music, './data/music_albums.json')
     puts "Music Album '#{name}' created successfully'"
+  end
 
-    def create_game
+  def create_game
     @game = []
+
     print 'Multiplayer: '
     multiplayer = gets.chomp.to_s
 
@@ -59,7 +61,8 @@ module Create
     publish_date = gets.chomp.to_s
 
     @game << Game.new(multiplayer, last_played_at, publish_date.to_s)
-    write_to_file(@game, './data/game.json')
+    write_to_file(@game, './data/game.json') do |game|
+    end
     puts "Game '#{multiplayer}' created successfully"
   end
 end
