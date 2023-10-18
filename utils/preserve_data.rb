@@ -2,7 +2,7 @@ require 'json'
 
 def write_to_file(obj, filename)
   # serialization : object to hash
-  data = obj.map(&:to_json)
+  data = obj.map(&:to_json) 
   # generate json from the hash
   data_json = JSON.generate(data)
   # write generated json data to file
