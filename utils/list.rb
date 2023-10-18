@@ -27,7 +27,8 @@ def list_music_albums
   @music_albums = read_from_file('./data/music_albums.json')
   puts 'Music Albums list is empty' if @music_albums.empty?
   @music_albums.each_with_index do |music_album, i|
-    puts "#{i}) Name: '#{music_album['name']}', Publish date: '#{music_album['publish_date']}', On Spotify: '#{music_album['on_spotify']}, Genres: '#{music_album['genres']}'"
+    puts "#{i}) Name: '#{music_album['name']}', Publish date: '#{music_album['publish_date']}', On Spotify: '#{music_album['on_spotify']},
+    Genres: '#{music_album['genres']}'"
   end
 end
 
