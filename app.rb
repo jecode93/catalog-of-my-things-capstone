@@ -22,13 +22,10 @@ class App
     methods = [
       method(:create_book),
       method(:create_music_album),
-      'Music added',
       method(:create_game),
       method(:list_books),
-      'All music albums',
       method(:list_music_albums),
       method(:list_games),
-      'All genres',
       method(:list_labels),
       method(:list_authors)
     ]
