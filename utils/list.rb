@@ -46,7 +46,7 @@ def list_music_albums
   puts 'Music Albums list is empty' if @music.empty?
   @music.each_with_index do |music, i|
     puts "#{i}) Name: '#{music['name']}', Publish date: '#{music['publish_date']}', On Spotify: '#{music['on_spotify']},
-    Genres: '#{music['genres']}'"
+    Genres: '#{music['genre']}'"
   end
 end
 
