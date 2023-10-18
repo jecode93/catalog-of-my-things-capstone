@@ -1,5 +1,5 @@
 class Item
-  attr_acesssor :archived, :publish_date, :genre, :author, :source, :label
+  attr_accessor :archived, :publish_date, :genre, :author, :source, :label
 
   def initialize(archived, publish_date)
     @id = generate_id
