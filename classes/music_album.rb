@@ -4,7 +4,7 @@ require 'date'
 class MusicAlbum < Item
   attr_reader :id, :on_spotify
 
-  def initialize(archived, publish_date, on_spotify)
+  def initialize(archived, publish_date, on_spotify, genre)
     super(archived, publish_date)
     @id = Random.rand(1...1000)
     @on_spotify = on_spotify
@@ -24,4 +24,5 @@ class MusicAlbum < Item
   def self.json_create(object)
     new(*object['a'])
   end
+  
 end
