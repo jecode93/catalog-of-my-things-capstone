@@ -4,7 +4,7 @@ class Genre
   attr_reader :id, :items
   attr_accessor :name
 
-  def initialize(name, _id)
+  def initialize(name)
     @id = generate_id
     @name = name
     @items = []
