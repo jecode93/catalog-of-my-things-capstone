@@ -5,7 +5,7 @@ class Genre
   attr_accessor :name
 
   def initialize(name)
-    @id = generate_id
+    @id = Random.rand(1..1000)
     @name = name
     @items = []
   end
@@ -24,13 +24,5 @@ class Genre
 
   def self.json_create(object)
     new(*object['a'])
-  end
-
-  private
-
-  def generate_id
-    timestamp = Time.now.to_i * 1000
-    random_number = rand(10_000)
-    "Aut#{timestamp}#{random_number}"
   end
 end
