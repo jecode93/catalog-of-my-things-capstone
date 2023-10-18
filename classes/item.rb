@@ -1,5 +1,7 @@
+require_relative 'date'
+
 class Item
-  attr_accessor :archived, :publish_date, :genre, :author, :source, :label
+  attr_accessor :id, :archived, :publish_date, :genre, :author, :source, :label
 
   def initialize(archived, publish_date)
     @id = generate_id
@@ -13,7 +15,7 @@ class Item
 
   def generate_id
     timestamp = Time.now.to_i * 1000
-    random_number = rand(101_000)
+    random_number = rand(10_000)
     "#{timestamp}#{random_number}"
   end
 
