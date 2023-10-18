@@ -36,6 +36,3 @@ CREATE TABLE IF NOT EXISTS genres (
   items INT REFERENCES (books, music_albums, games),
   PRIMARY KEY(id, items)
 );
-
-CREATE INDEX music_albums_id ON music_albums(id);
-CREATE INDEX genre_id ON genre(id);
