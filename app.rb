@@ -1,5 +1,6 @@
 require_relative 'classes/book'
 require_relative 'classes/music_album'
+require_relative 'classes/author'
 require_relative 'utils/create'
 require_relative 'utils/List'
 
@@ -18,10 +19,9 @@ class App
   end
 
   def actions(option)
-    methods = [method(:create_book), method(:create_music_album), 'Music added', 'Game added', method(:list_books),
-               'All music albums',
-               method(:list_music_albums), 'All games',
-               'All genres', method(:list_labels), 'All authors']
+
+    methods = [method(:create_book), , method(:create_music_album), 'Music added', method(:create_game), method(:list_books), 'All music albums', method(:list_music_albums),
+               method(:list_games), 'All genres', method(:list_labels), method(:list_authors)]
     if (1..10).include?(option)
       methods[option - 1].call
     else

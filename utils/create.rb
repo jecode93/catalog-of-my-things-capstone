@@ -2,6 +2,7 @@ require_relative '../classes/book'
 require_relative '../classes/music_album'
 require_relative '../classes/genre'
 require_relative '../classes/item'
+require_relative '../classes/game'
 require_relative '../utils/preserve_data'
 
 module Create
@@ -45,5 +46,20 @@ module Create
     @music << MusicAlbum.new(publish_date, on_spotify, genre)
     write_to_file(@music, './data/music_albums.json')
     puts "Music Album '#{name}' created successfully'"
+
+    def create_game
+    @game = []
+    print 'Multiplayer: '
+    multiplayer = gets.chomp.to_s
+
+    print 'Last played at: '
+    last_played_at = gets.chomp.to_s
+
+    print 'Publish date: '
+    publish_date = gets.chomp.to_s
+
+    @game << Game.new(multiplayer, last_played_at, publish_date.to_s)
+    write_to_file(@game, './data/game.json')
+    puts "Game '#{multiplayer}' created successfully"
   end
 end
