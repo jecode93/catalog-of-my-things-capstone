@@ -22,3 +22,19 @@ module List
     end
   end
 end
+
+def list_music_albums
+  @music_albums = read_from_file('./data/music_albums.json')
+  puts 'Music Albums list is empty' if @music_albums.empty?
+  @music_albums.each_with_index do |music_album, i|
+    puts "#{i}) Publish date: '#{music_album['publish_date']}', On Spotify: '#{music_album['on_spotify']}'"
+  end
+end
+
+def list_genres
+  @genres = read_from_file('./data/genres.json')
+  puts 'Genres list is empty' if @genres.empty?
+  @genres.each_with_index do |genre, i|
+    puts "#{i}) Name: '#{genre['name']}',  Items: '#{genre['items']}'"
+  end
+end
