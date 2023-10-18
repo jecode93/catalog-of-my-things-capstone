@@ -15,14 +15,10 @@ class Genre
     item.genre = self
   end
 
-  def to_json(*args)
+  def to_json(option = {})
     {
-      JSON.create_id => self.class.name,
-      'a' => [name]
-    }.to_json(*args)
-  end
-
-  def self.json_create(object)
-    new(*object['a'])
+      id: @id,
+      name: @name
+    }.to_json(option)
   end
 end
