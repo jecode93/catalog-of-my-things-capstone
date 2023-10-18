@@ -3,7 +3,7 @@ require 'rspec'
 
 describe MusicAlbum do
   let(:archived) { true }
-  let(:publish_date) { Date.new(2023, 1, 1) }
+  let(:publish_date) { Date.parse('2023-02-01') }
   let(:on_spotify) { true }
 
   subject(:album) { described_class.new(true, publish_date, true) }
