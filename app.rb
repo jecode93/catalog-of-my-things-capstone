@@ -1,4 +1,5 @@
 require_relative 'classes/book'
+require_relative 'classes/music_album'
 require_relative 'utils/create'
 require_relative 'utils/List'
 
