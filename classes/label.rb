@@ -21,4 +21,13 @@ class Label
     random_number = rand(10_000)
     "Aut#{timestamp}#{random_number}"
   end
+
+  def to_json(*_args)
+    {
+      id: Random.rand(1..100),
+      title: @title,
+      color: @color,
+      items: @items
+    }
+  end
 end
