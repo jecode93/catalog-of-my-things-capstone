@@ -24,11 +24,11 @@ module List
 end
 
 def list_music_albums
-  @music_albums = read_from_file('./data/music_albums.json')
-  puts 'Music Albums list is empty' if @music_albums.empty?
-  @music_albums.each_with_index do |music_album, i|
-    puts "#{i}) Name: '#{music_album['name']}', Publish date: '#{music_album['publish_date']}', On Spotify: '#{music_album['on_spotify']},
-    Genres: '#{music_album['genres']}'"
+  @music = read_from_file('./data/music_albums.json')
+  puts 'Music Albums list is empty' if @music.empty?
+  @music.each_with_index do |music, i|
+    puts "#{i}) Name: '#{music['name']}', Publish date: '#{music['publish_date']}', On Spotify: '#{music['on_spotify']},
+    Genres: '#{music['genres']}'"
   end
 end
 
