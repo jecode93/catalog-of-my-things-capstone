@@ -17,4 +17,22 @@ module Create
     write_to_file(@books, './data/books.json')
     puts "Book '#{publisher}' created successfully'"
   end
+
+  def create_music_album
+    print 'Enter Album Title: '
+    name = gets.chomp.to_s
+
+    print 'Enter date of release (YYYY-M-D): '
+    publish_date = gets.chomp.to_s
+
+    print 'Album listed on Spotify? (Y/N): '
+    on_spotify = gets.chomp.downcase == 'y'
+
+    print 'Enter the genre of the album music: '
+    genres = gets.chomp
+
+    @music_albums << MusicAlbum.new(name, publish_date, on_spotify, genres)
+    write_to_file(@music_albums, './data/music_albums.json')
+    puts "Music Album '#{name}' created successfully'"
+  end
 end
