@@ -10,6 +10,7 @@ describe Genre do
   describe '#add_item' do
     it 'adds item inside the genre' do
       expect(item).to receive(:genre=).with(genre)
+      genre.add_item(item)
       expect(genre.items).to include(item)
     end
   end
