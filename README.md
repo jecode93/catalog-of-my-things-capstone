@@ -61,7 +61,7 @@ Once an item is added to the catalog, users can view and edit its details, as we
 
 The Live Demo of this Capstone Project is available now on YouTube.
 
-- [Video Presentation on YouTube](https://youtu.be/Nh86cSzaZHQ) 
+- [Video Presentation on YouTube](https://youtu.be/gCqn9Me7pok) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
