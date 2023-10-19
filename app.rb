@@ -2,7 +2,7 @@ require_relative 'classes/book'
 require_relative 'classes/music_album'
 require_relative 'classes/author'
 require_relative 'utils/create'
-require_relative 'utils/List'
+require_relative 'utils/list'
 
 class App
   include Create
