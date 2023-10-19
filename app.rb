@@ -26,6 +26,7 @@ class App
       method(:list_books),
       method(:list_music_albums),
       method(:list_games),
+      method(:list_genres),
       method(:list_labels),
       method(:list_authors)
     ]
