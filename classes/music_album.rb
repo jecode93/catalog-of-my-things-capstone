@@ -24,5 +24,5 @@ class MusicAlbum < Item
       on_spotify: @on_spotify,
       genre: @genre
     }
-   end
+  end
 end
