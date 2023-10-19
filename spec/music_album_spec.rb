@@ -8,7 +8,7 @@ describe MusicAlbum do
   let(:on_spotify) { true }
   let(:genre) { 'Rock' }
 
-subject(:album) { described_class.new(archived, publish_date, on_spotify, genre) }
+  subject(:album) { described_class.new(archived, publish_date, on_spotify, genre) }
 
   describe '#can_be_archived?' do
     context 'when super is false' do
