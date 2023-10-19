@@ -74,7 +74,7 @@ In order to run this project you need:
 Clone this repository to your desired folder by using this 👇️ command :
 
 ```
-git clone https://github.com/katarighe/school-library.git
+git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
 ```
 
 ### Install
@@ -82,7 +82,7 @@ git clone https://github.com/katarighe/school-library.git
 Go to the project directory:
 
 ```
- cd school-library
+ cd catalog-of-my-things-capstone
 ```
 
 Before to run the program, verify that you have Ruby installed on your OS running the following command:
@@ -105,7 +105,9 @@ ruby main.rb
 
 ### Run tests
 
-- Tests are not applicable in this project at the moment.
+```
+rspec
+```
 
 ### Deployment
 
