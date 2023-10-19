@@ -26,7 +26,9 @@
 
 # Catalog of My Things <a name="about-project"></a>
 
-The **Catalog of My Things** is a is a Ruby-built app that revolutionizes library management by making it easy to catalog, track, and lend books to students and teachers.
+**Catalog of My Things** is a software application that allows users to keep track of their personal belongings. It can be used to catalog any type of item, such as books, movies, music, games, tools, electronics, and more. Users can add items to their catalog by entering information such as the item's name, description, purchase date, and price. They can also add photos of their items.
+
+Once an item is added to the catalog, users can view and edit its details, as well as track its status (e.g., borrowed, lent, lost). Users can also generate reports to see a list of all their items, or to filter items by category, date, or other criteria.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,8 +48,11 @@ The **Catalog of My Things** is a is a Ruby-built app that revolutionizes librar
 
 > The key features of this project includes.
 
-- **A class that represents the entire class.**
-- **A module that represents the implementation of a subset of the functionality.**
+- **Ability to catalog any type of item**
+- **Ability to add photos of items**
+- **Ability to view and edit item details**
+- **Ability to track item status**
+- **Ability to generate reports**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +87,7 @@ git clone https://github.com/jecode93/catalog-of-my-things-capstone.git
 Go to the project directory:
 
 ```
- cd catalog-of-my-things-capstone
+cd catalog-of-my-things-capstone
 ```
 
 Before to run the program, verify that you have Ruby installed on your OS running the following command:
@@ -143,12 +148,18 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Here are some future features that could be added to the School Library Management System in the future.
+> Here are some future features that could be added to the Catalog of My Things in the future.
 
-- **Integration with other educational tools:** SLMS can be integrated with other educational tools, such as learning management systems (LMS) and electronic textbooks, to provide a more seamless learning experience for students.
-- **Support for multiple languages and cultures:** SLMS can be made more inclusive by supporting multiple languages and cultures. This would allow students from all backgrounds to access and benefit from the resources that the library has to offer.
+- **Artificial intelligence (AI) powered features:** AI could be used to help users automatically identify and catalog items, as well as to provide recommendations for new items to add to their collection.
 
-These are just a few ideas for future features that could be added to the School Library Management System module. The specific features that are added will depend on the needs and wants of the users.
+- **Integration with smart home devices:** The Catalog of My Things could be integrated with smart home devices, such as smart speakers and displays, to allow users to control their catalog using voice commands.
+
+- **Augmented reality (AR) and virtual reality (VR) features:** AR and VR could be used to create a more immersive experience for users, allowing them to view their catalog items in 3D or to even "walk through" their collection.
+
+- **Social media integration:** Users could be able to share their catalogs with others on social media, or to see what other people are collecting.
+Marketplace integration: Users could be able to buy and sell items from their catalogs through a marketplace integration.
+
+These are just a few ideas for future features that could be added to the Catalog of My Things project. The specific features that are added will depend on the needs and wants of the users.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
