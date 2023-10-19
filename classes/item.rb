@@ -1,5 +1,3 @@
-require_relative 'date'
-
 class Item
   attr_accessor :id, :archived, :publish_date, :genre, :author, :source, :label
 
