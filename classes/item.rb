@@ -24,6 +24,6 @@ class Item
   private
 
   def can_be_archived?
-    (Time.new.year - @publish_date.year) > 10
+    (Time.new.year - @publish_date.year) > 1
   end
 end
