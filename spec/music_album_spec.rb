@@ -1,12 +1,14 @@
 require_relative '../classes/music_album'
 require 'rspec'
+require 'date'
 
 describe MusicAlbum do
   let(:archived) { true }
   let(:publish_date) { Date.parse('2023-02-01') }
   let(:on_spotify) { true }
+  let(:genre) { 'Rock' }
 
-  subject(:album) { described_class.new(true, publish_date, true) }
+subject(:album) { described_class.new(archived, publish_date, on_spotify, genre) }
 
   describe '#can_be_archived?' do
     context 'when super is false' do
